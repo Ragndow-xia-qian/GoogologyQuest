@@ -28,32 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.title = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            title = new Label();
+            SuspendLayout();
             // 
             // title
             // 
-            this.title.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.title.Font = new System.Drawing.Font("华文彩云", 30F);
-            this.title.ForeColor = System.Drawing.Color.Red;
-            this.title.Location = new System.Drawing.Point(70, -4);
-            this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(656, 92);
-            this.title.TabIndex = 0;
-            this.title.Text = "Googology Quest";
+            title.Anchor = AnchorStyles.None;
+            title.BackColor = Color.Transparent;
+            title.Font = new Font("华文彩云", 30F);
+            title.ForeColor = Color.Bisque;
+            title.Location = new Point(82, -5);
+            title.Margin = new Padding(4, 0, 4, 0);
+            title.Name = "title";
+            title.Size = new Size(765, 119);
+            title.TabIndex = 0;
+            title.Text = "Googology Quest";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.title);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(14F, 31F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkBlue;
+            ClientSize = new Size(933, 581);
+            Controls.Add(title);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion

@@ -30,11 +30,14 @@ namespace GoogologyQuest
             int y = (workingArea.Height - this.Height) / 2;
 
             this.Location = new Point(x, y); // 设置窗口的位置
+
+            // 设置背景图片
+            this.BackgroundImage = Image.FromFile("D:\\Code\\csharp\\WinForm Projects\\GoogologyQuest\\GoogologyQuest\\Sources\\Resources\\images\\background.jpg");
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("你确定要退出吗？", "提示", MessageBoxButtons.OKCancel) != DialogResult.OK)
+            if (MessageBox.Show("你确定要退出吗？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) != DialogResult.OK)
             {
                 e.Cancel = true; // 取消关闭操作
             }
